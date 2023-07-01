@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            //needs also to be added to jest.config.js
+            "@/*": ["src/*"],
+            "@database/*": ["src/database/*"],
+            "@shared/*": ["src/shared/*"],
+            "@interfaces/*": ["src/shared/interfaces/*"],
+            "@apps/*": ["src/apps/*"],
+            "*.ts": ["src/*"]
+        },
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        // "sourceMap": true,
+        // "isolatedModules": true,
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strictPropertyInitialization": false,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "noEmit": false,
+        "jsx": "preserve",
+        "incremental": true
+        // "typeRoots": ["./node_modules/@types", "./node_modules"]
+    },
+    "include": [
+        "src",
+        "./src/**/*",
+        "**/*.ts", "seeders/add10DummyEmployees.js",
+    ],
+    "exclude": ["node_modules", "dashboard"]
+}
+
